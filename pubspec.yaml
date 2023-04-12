@@ -1,0 +1,48 @@
+name: watch_now
+description: A new Flutter project.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Splash Screen
+  flutter_native_splash: ^2.2.19
+
+  # Handle state manager and navigator manager
+  get: ^4.6.5
+
+  # This following pakcage is used to make http requests
+  dio: ^5.1.1
+
+  # Loading Shimmer
+  shimmer: ^2.0.0
+
+  # Additional Package
+  cached_network_image: ^3.2.1
+  flutter_screenutil: ^5.0.0+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  image: assets/images/logo_application.png
+  color: "#FFFFFF"
+  android_12:
+    image: assets/images/logo_application.png
+    color: "#FFFFFF"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
